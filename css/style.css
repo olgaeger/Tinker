@@ -1,7 +1,10 @@
+html, head, body {
+  box-sizing: border-box;
+}
+
 .container{
-  width: 100%;
+  /* width: 100%; */
   background-color: red;
-  height: 350px;
   display: flex;
   flex-direction: column;
 }
@@ -9,27 +12,28 @@
   background-color: aqua;
   flex: 2;
   text-align: center;
-  line-height: 31.81px;
+  position: relative;
 }
-#id2{
+#id2 , #id3{
   background-color: gold;
   flex: 5;  
   text-align: center;
-  line-height: 79.55px;
-}
-#id3{
-  background-color: forestgreen;
-  flex: 5;
-  text-align: center;
-  line-height: 79.55px;
+  line-height: 100px;
 }
 #id4{
   background-color: hotpink;
-  flex: 10;
+  flex: 2;
+  line-height: 31.81px;
 }
-.row{
-
+#id5{
+  background-color: orange;
+  flex: 8;
 }
-.col{
-
+img{
+  vertical-align: middle;
+  padding: 15px;
+  width: 25%;
+}
+.btn.btn-outline-danger{
+  float: right;
 }
