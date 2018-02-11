@@ -3,30 +3,25 @@ html, head, body {
 }
 
 .container{
-  /* width: 100%; */
-  background-color: red;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
 #id1{
-  background-color: aqua;
   flex: 2;
   text-align: center;
   position: relative;
 }
 #id2 , #id3{
-  background-color: gold;
   flex: 5;  
   text-align: center;
   line-height: 100px;
 }
 #id4{
-  background-color: hotpink;
   flex: 2;
   line-height: 31.81px;
 }
 #id5{
-  background-color: orange;
   flex: 8;
 }
 img{

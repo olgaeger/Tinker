@@ -13,16 +13,29 @@
 <body>
     <div class="container">
         <div class="row" id="id1">
-            <div class="col-5">PRODUCT</div>
-            <div class="col">PRICE</div>
-            <div class="col-3">STOCK STATUS</div>
-            <div class="col">QUANTY</div>
-            <div class="col">REMOVE</div>
+            <div class="col-5">
+                <p class="font-weight-bold">PRODUCT</p>
+            </div>
+            <div class="col">
+                <p class="font-weight-bold">PRICE</p>
+            </div>
+            <div class="col-3">
+                <p class="font-weight-bold">STOCK STATUS</p>
+            </div>
+            <div class="col">
+                <p class="font-weight-bold">QUANTY</p>
+            </div>
+            <div class="col">
+                <p class="font-weight-bold">REMOVE</p>
+            </div>
         </div>
         
         <div class="row" id="id2">
             <div class="col-5">
-                <img src="images/image1.jpg" class="float-left" alt=""> Starter Parst Car
+                <img src="images/image1.jpg" class="float-left" alt=""> 
+                <p class="font-weight-bold">
+                    <big>Starter Parst Car</big>
+                </p>
             </div>
             <div class="col">$56.00</div>
             <div class="col-3">IN STOCK</div>
@@ -42,9 +55,13 @@
                 <span class="oi oi-x"></span>
             </div>
         </div>
+
         <div class="row" id="id3">
             <div class="col-5">
-                <img src="images/image2.jpg" class="float-left" alt=""> Starter Parst Car
+                <img src="images/image2.jpg" class="float-left" alt=""> 
+                <p class="font-weight-bold">
+                    <big>Starter Parst Car</big>
+                </p>
             </div>
             <div class="col">$56.00</div>
             <div class="col-3">IN STOCK</div>
@@ -64,52 +81,57 @@
                 <span class="oi oi-x"></span>
             </div>
         </div>
+
         <div class="row" id="id4">
-            <div class="col">ESTIMATE SHIPPING AND TAX</div>
-            <div class="col">COUPON DISCOUNT</div>
-            <div class="col">CARD TOTAL</div>
+            <div class="col">
+                <p class="font-weight-bold">ESTIMATE SHIPPING AND TAX</p>
+            </div>
+            <div class="col">
+                <p class="font-weight-bold">COUPON DISCOUNT</p>
+            </div>
+            <div class="col">
+                <p class="font-weight-bold">CARD TOTAL</p>
+            </div>
         </div>
+
         <div class="row" id="id5">
             <div class="col-4">
-                <div class="dropdown col-sm">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Country
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Country1</a>
-                        <a class="dropdown-item" href="#">Country2</a>
-                        <a class="dropdown-item" href="#">Country3</a>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm">
+                            <label for="inputCountry"></label>
+                            <select id="inputCountry" class="form-control">
+                                <option selected>Country</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm">
+                            <label for="inputCity"></label>
+                            <select id="inputCity" class="form-control">
+                                <option selected>City</option>
+                                <option>...</option>
+                            </select>
+                        </div>
                     </div>
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    City
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">City1</a>
-                        <a class="dropdown-item" href="#">City2</a>
-                        <a class="dropdown-item" href="#">City3</a>
+                    <div class="form-row">    
+                        <div class="form-group col-sm">
+                            <label for="inputState"></label>
+                            <select id="inputState" class="form-control">
+                                <option selected>State/Province</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm">
+                            <label for="inputZip"></label>
+                            <select id="inputZip" class="form-control">
+                                <option selected>Zip/Postal Code</option>
+                                <option>...</option>
+                            </select>
+                        </div>
                     </div>
-                </div>    
-        
-                <div class="dropdown col-sm">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    State/Province
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">State/Province1</a>
-                        <a class="dropdown-item" href="#">State/Province2</a>
-                        <a class="dropdown-item" href="#">State/Province3</a>
-                    </div>
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Zip/Postal Code
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Zip/Postal Code1</a>
-                        <a class="dropdown-item" href="#">Zip/Postal Code2</a>
-                        <a class="dropdown-item" href="#">Zip/Postal Code3</a>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-outline-danger btn-sm">GET A QUOTE</button>   
-            </div>
+                    <button type="button" class="btn btn-outline-danger btn-sm">GET A QUOTE</button>
+                </form>
+            </div>    
             <div class="col-4">
                 <form>
                     <div class="form-row">
@@ -122,13 +144,26 @@
                 </form>
             </div>
             <div class="col-4">
-                <p class="font-weight-normal">Subtotal</p>
-                <p class="font-weight-normal">Shipping</p>
+                <div class="row">
+                    <div class="col">
+                        <p class="font-weight-normal">Subtotal</p>
+                        <p class="font-weight-normal">Shipping</p>
+                    </div>
+                    <div class="col">
+                        <p class="font-weight-normal">$ 415.00</p>
+                        <p class="font-weight-normal">Free Shipping</p>
+                    </div>
+                </div>
                 <hr></hr>
-                <p class="font-weight-bold">Grand Total</p>
-                <p>
-                <button type="button" class="btn btn-outline-danger btn-sm">PROCCED TO CHECKOUT</button>
-                </p>
+                <div class="row">
+                    <div class="col">
+                        <p class="font-weight-bold">Grand Total</p>
+                    </div>
+                    <div class="col">
+                        <p class="font-weight-bold">$ 415.00</p>
+                    </div> 
+                </div>
+                <button type="button" class="btn btn-outline-danger btn-sm">PROCCED TO CHECKOUT</button>                            
             </div>
         </div>
     </div>
