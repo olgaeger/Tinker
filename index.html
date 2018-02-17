@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <div class="row" id="id1">
+        <div id="id1" class="row" >
             <div class="col-5">
                 <p class="font-weight-bold">PRODUCT</p>
             </div>
@@ -30,19 +30,46 @@
             </div>
         </div>
         
-        <div class="row" id="id2">
+        <div id="id2" class="row" >
             <div class="col-5">
-                <img src="images/image1.jpg" class="float-left" alt=""> 
-                <p class="font-weight-bold">
-                    <big>Starter Parst Car</big>
-                </p>
+                <div id="product" class="row">
+                    <img src="images/image1.jpg"  alt=""> 
+                    <p class="font-weight-bold" style="margin-bottom: 0px;">
+                        <big>Starter Parst Car</big>
+                    </p>
+                </div>
             </div>
             <div class="col">$56.00</div>
             <div class="col-3">IN STOCK</div>
             <div class="col">
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1"></label>
-                    <select class="form-control-sm" id="exampleFormControlSelect1">
+                <div class="form-group" style="margin-bottom: 0px;">
+                    <select id="exampleFormControlSelect1" class="form-control-sm" >
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <span class="oi oi-x"></span>
+            </div>
+        </div>
+        <div id="id3" class="row" >
+            <div class="col-5">
+                <div id="product" class="row">
+                    <img src="images/image2.jpg"  alt=""> 
+                        <p class="font-weight-bold" style="margin-bottom: 0px;">
+                            <big>Starter Parst Car</big>
+                        </p>
+                </div>
+            </div>
+            <div class="col">$56.00</div>
+            <div class="col-3">IN STOCK</div>
+            <div class="col">
+                <div class="form-group" style="margin-bottom: 0px;">
+                    <select id="exampleFormControlSelect1" class="form-control-sm" >
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -56,33 +83,7 @@
             </div>
         </div>
 
-        <div class="row" id="id3">
-            <div class="col-5">
-                <img src="images/image2.jpg" class="float-left" alt=""> 
-                <p class="font-weight-bold">
-                    <big>Starter Parst Car</big>
-                </p>
-            </div>
-            <div class="col">$56.00</div>
-            <div class="col-3">IN STOCK</div>
-            <div class="col">
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1"></label>
-                    <select class="form-control-sm" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col">
-                <span class="oi oi-x"></span>
-            </div>
-        </div>
-
-        <div class="row" id="id4">
+        <div id="id4" class="row" >
             <div class="col">
                 <p class="font-weight-bold">ESTIMATE SHIPPING AND TAX</p>
             </div>
@@ -94,42 +95,40 @@
             </div>
         </div>
 
-        <div class="row" id="id5">
+        <div id="id5" class="row justify-content-between" >
             <div class="col-4">
                 <form>
-                    <div class="form-row">
+                    <div class="row justify-content-between">
                         <div class="form-group col-sm">
-                            <label for="inputCountry"></label>
                             <select id="inputCountry" class="form-control">
                                 <option selected>Country</option>
                                 <option>...</option>
                             </select>
                         </div>
                         <div class="form-group col-sm">
-                            <label for="inputCity"></label>
                             <select id="inputCity" class="form-control">
                                 <option selected>City</option>
                                 <option>...</option>
                             </select>
                         </div>
                     </div>
-                    <div class="form-row">    
+                    <div class="row justify-content-between">    
                         <div class="form-group col-sm">
-                            <label for="inputState"></label>
                             <select id="inputState" class="form-control">
                                 <option selected>State/Province</option>
                                 <option>...</option>
                             </select>
                         </div>
                         <div class="form-group col-sm">
-                            <label for="inputZip"></label>
                             <select id="inputZip" class="form-control">
                                 <option selected>Zip/Postal Code</option>
                                 <option>...</option>
                             </select>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-outline-danger btn-sm">GET A QUOTE</button>
+                    <div class="row justify-content-end">
+                        <button type="button" class="btn btn-outline-danger btn-sm">GET A QUOTE</button>
+                    </div>
                 </form>
             </div>    
             <div class="col-4">
@@ -137,33 +136,39 @@
                     <div class="form-row">
                         <div class="form-group col-sm">
                             <label for="inputCoupon">Enter Your Coupon Code Here</label>
-                            <input type="text" class="form-control" id="inputCoupon" placeholder="">
+                            <input type="text" id="inputCoupon" class="form-control"  placeholder="">
                         </div>
                     </div>
-                    <button type="button" class="btn btn-outline-danger btn-sm">APPLY COUPON</button>
+                    <div class="row justify-content-end">
+                        <button type="button" class="btn btn-outline-danger btn-sm">APPLY COUPON</button>
+                    </div>
                 </form>
             </div>
             <div class="col-4">
-                <div class="row">
+                <div class="row justify-content-between">
                     <div class="col">
                         <p class="font-weight-normal">Subtotal</p>
                         <p class="font-weight-normal">Shipping</p>
                     </div>
                     <div class="col">
-                        <p class="font-weight-normal">$ 415.00</p>
-                        <p class="font-weight-normal">Free Shipping</p>
+                        <p class="font-weight-normal" style="text-align:right">$ 415.00</p>
+                        <p class="font-weight-normal" style="text-align:right">Free Shipping</p>
                     </div>
                 </div>
-                <hr></hr>
-                <div class="row">
+                
+                    <hr style="margin-bottom:16px; margin-top:0px"/>
+                  
+                <div class="row justify-content-between">
                     <div class="col">
                         <p class="font-weight-bold">Grand Total</p>
                     </div>
                     <div class="col">
-                        <p class="font-weight-bold">$ 415.00</p>
+                        <p class="font-weight-bold" style="text-align:right">$ 415.00</p>
                     </div> 
                 </div>
-                <button type="button" class="btn btn-outline-danger btn-sm">PROCCED TO CHECKOUT</button>                            
+                <div class="row justify-content-end">
+                    <button type="button" class="btn btn-outline-danger btn-sm">PROCCED TO CHECKOUT</button>
+                </div>
             </div>
         </div>
     </div>
